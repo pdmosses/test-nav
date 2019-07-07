@@ -1,1 +1,10 @@
-theme: jekyll-theme-minimal
+remote_theme: pmarsceill/just-the-docs
+title: Test Navigation
+description: Testing theme navigation menus
+repository: "pdmosses/test-nav"
+# Aux links for the upper right navigation
+aux_links:
+  "test-nav on GitHub":
+    - "//github.com/pdmosses/test-nav"
+plugins:
+    - jekyll-seo-tag
