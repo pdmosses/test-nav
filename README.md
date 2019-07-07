@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Test navigation
-nav_order: 1
+title: README
+nav_exclude: true
 ---
 
 ## Welcome to GitHub Pages
