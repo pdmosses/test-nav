@@ -16,5 +16,5 @@ Testing generated navigation for pages with `nav_exclude`
 It appears that giving a child to a page in `docs` adds 4 blank lines
 for each page in `pages` with `nav_exclude: true`.
 
-In a real project with 125 pages, making `has_children: false` in `docs`
-shrinks the generated nav from 1650 lines to 400 lines.
+In a real project with 125 pages with `nav_exclude: true`, making
+`has_children: false` in `docs` shrinks the generated nav from 1650 lines to 400 lines.
