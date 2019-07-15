@@ -4,17 +4,25 @@ title: Test navigation
 nav_order: 1
 ---
 
-Testing generated navigation for pages with `nav_exclude`
+Test of generated navigation sidebar
+====================================
 
-[`index.html`](.) lines:
+Just the docs
+-------------
 
-- just pages, no docs: 133
-- docs/parent.md `has_children: true`: 187
-- docs/parent.md `has_children: false`: 148
-- just docs, no pages: 125
+Without modified `_includes/nav.html`:
 
-It appears that giving a child to a page in `docs` adds 4 blank lines
-for each page in `pages` with `nav_exclude: true`.
+- [This file](.): 232  lines, 6479 chars
 
-In a real project with 125 pages with `nav_exclude: true`, making
-`has_children: false` in `docs` shrinks the generated nav from 1650 lines to 400 lines.
+- [UI Components](docs/ui-components): shows grandchild
+
+Modified
+--------
+
+With modified `_includes/nav.html`:
+
+- [This file](.): 133  lines, 4155 chars
+
+- [UI Components](docs/ui-components): does not show grandchild
+
+- [Buttons](docs/ui-components/buttons): shows grandchild
