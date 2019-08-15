@@ -8,3 +8,5 @@ aux_links:
     - "//github.com/pdmosses/test-nav"
 plugins:
     - jekyll-seo-tag
+compress_html:
+  blanklines: true
