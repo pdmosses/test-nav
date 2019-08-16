@@ -12,16 +12,13 @@ Just the docs
 
 ```
 compress_html:
-blanklines: true
-clippings: []
-startings: []
-endings: []
+  blanklines: true
 ```
 
-Without modified `_includes/nav.html`:
+Using Just-the-Docs v0.2.6, this file's `<nav>` element size:
 
-- [This file](.): 88 lines, 6591 chars
+-  431 chars
 
 With modified `_includes/nav.html`:
 
-- [This file](.): 91 lines, 5613 chars
+- 1400 chars

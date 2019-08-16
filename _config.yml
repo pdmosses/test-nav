@@ -10,6 +10,3 @@ plugins:
     - jekyll-seo-tag
 compress_html:
   blanklines: true
-  clippings: []
-  startings: []
-  endings: []
