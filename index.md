@@ -17,8 +17,8 @@ compress_html:
 
 Using Just-the-Docs v0.2.6, this file's `<nav>` element size:
 
--  431 chars
-
-With modified `_includes/nav.html`:
-
 - 1400 chars
+
+With modified `_includes/nav.html`, eliminating undisplayed children and grandchildren:
+
+- 357 chars
