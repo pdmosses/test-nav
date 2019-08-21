@@ -10,3 +10,4 @@ plugins:
     - jekyll-seo-tag
 compress_html:
   blanklines: true
+grandchildren_branch: false
