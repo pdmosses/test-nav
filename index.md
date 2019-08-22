@@ -24,9 +24,3 @@ With modified `_includes/nav.html`, eliminating generation of undisplayed
 children and grandchildren:
 
 - 357 chars
-
-- Adding the following to  `_config.yml` delays the display of grand_children
-until their parent has been selected:
-```
-grandchildren_branch: true
-```
