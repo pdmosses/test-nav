@@ -1,4 +1,4 @@
-remote_theme: pmarsceill/just-the-docs@0.2.6
+remote_theme: pmarsceill/just-the-docs
 title: Test Navigation
 description: Testing theme navigation menus
 repository: "pdmosses/test-nav"
