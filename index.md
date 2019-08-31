@@ -2,7 +2,7 @@
 layout: default
 title: Test navigation
 nav_exclude: true
-usemathjax: true
+mathjax: true
 ---
 
 Test of generated navigation sidebar

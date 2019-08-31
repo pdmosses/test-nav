@@ -3,7 +3,7 @@ layout: default
 title: Mathjax examples
 parent: Mathjax
 nav_order: 1
-usemathjax: true
+mathjax: true
 ---
 
 $$x$$ math at the start of the document
