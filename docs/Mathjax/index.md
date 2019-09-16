@@ -2,10 +2,9 @@
 layout: default
 title: Mathjax
 nav_order: 3
-has_children: true
 ---
 
-The following document is to test $$\LaTeX$$ rendering with 
+The following document is to test $$\LaTeX$$ rendering with
 [just-the-docs](https://github.com/pmarsceill/just-the-docs) on GitHub Pages.
 
 It was copied from a
