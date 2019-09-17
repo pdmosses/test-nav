@@ -153,6 +153,16 @@ This is a long line: $$\chi(\lambda) = a e i-a e \lambda -a f h-a i \lambda +a \
 
 **Does it work in different MD elements?**
 
+<details markdown="block">
+  <summary>
+    CONTENTS
+  </summary>
+____
+- TOC
+{:toc}
+____
+</details>
+
 # Math $$x^2$$ in heading 1
 
 ## Math $$x^2$$ in heading 2
