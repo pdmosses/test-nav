@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Utilities
-nav_order: 1
+nav_order: Utilities
 permalink: /docs/utilities
 ---
