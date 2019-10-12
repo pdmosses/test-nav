@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Mathjax
-nav_order: Mathjax
 ---
 
 The following document is to test $$\LaTeX$$ rendering with

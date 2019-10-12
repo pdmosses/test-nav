@@ -11,7 +11,7 @@ Test of generated navigation sidebar
 Just the docs
 -------------
 
-Now testing recursive navigation and alphabetic page order workaround.
+Now testing recursive navigation and default alphabetic page order.
 
 Test of Mathjax
 ---------------

@@ -2,7 +2,6 @@
 layout: default
 title: Mathjax examples
 parent: Mathjax
-nav_order: Mathjax examples
 mathjax: true
 ---
 
