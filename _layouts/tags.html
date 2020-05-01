@@ -72,7 +72,7 @@ For each page and tag, generate an array of quadruples [slug, title, tag, url]
   <h3 id="{{ slug }}">#{{ slug }}</h3>
   <ul>
     {% for quad in quads %}
-      <li><a href="{{ quad[3] }}">{{ quad[1] }}</a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ quad[3] }}">{{ quad[1] }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
