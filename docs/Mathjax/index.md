@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Mathjax
+nav_order: 3
+tags:
+  - Math
+  - LaTeX
 ---
 
 The following document is to test $$\LaTeX$$ rendering with

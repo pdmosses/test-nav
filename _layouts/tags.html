@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+{% comment %}
+See _layouts/default.html for the code that includes tags in the navigation bar.
+
+Example content for a file using this layout:
+
+## Tags 
+
+{% endcomment %}
+
+{{ content }}
+
+{% comment %} Collect all the raw tags on pages {% endcomment %}
+
+{% assign site_tags = "" | split: "X" %}
+{% for page in site.pages %}
+  {% if page.tags != nil %}
+    {% assign site_tags = site_tags | concat: page.tags %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} Convert the raw tags to slugs {% endcomment %}
+
+{% assign site_slugs = "" | split: "X" %}
+{% for tag in site_tags %}
+  {% assign slug = tag | slugify: "pretty" %}
+  {% assign site_slugs = site_slugs | push: slug %}
+{% endfor %}
+
+{% comment %} Remove duplicate slugs and sort them {% endcomment %}
+
+{% assign site_slugs = site_slugs | uniq | sort %}
+
+{% for slug in site_slugs %}
+  <a href="#{{ slug }}">#{{ slug }}</a>
+{% endfor %}
+
+{% comment %}
+For each page and tag, generate an array of quadruples:
+[slug, title, tag, url]
+{% endcomment %}
+
+{% assign site_quads = "" | split: "X" %}
+{% for page in site.pages %}
+  {% for tag in page.tags %}
+    {% assign slug = tag | slugify: "pretty" %}    
+    {% assign quad = "" | split: "X" 
+            | push: slug
+            | push: page.title
+            | push: tag
+            | push: page.url %}
+    {% assign site_quads = site_quads | push: quad %}
+  {% endfor %}
+{% endfor %}
+
+{% comment %} Group the quadruples by their slugs {% endcomment %}
+
+{% assign site_slug_quad_hashes = site_quads 
+            | group_by_exp: "item", "item[0]" %}
+
+{% comment %} For debugging:
+{{ site_slug_quad_hashes | join: "<br/>" }}
+{% endcomment %}
+
+{% comment %} Generate a section of links for each slug {% endcomment %}
+
+{% for slug_quads_hash in site_slug_quad_hashes %}
+  {% assign slug = slug_quads_hash.name %}
+  {% assign quads = slug_quads_hash.items | sort %}
+  <h3 id="{{ slug }}">#{{ slug }}</h3>
+  <ul>
+    {% for quad in quads %}
+      <li><a href="{{ quad[3] }}">{{ quad[1] }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}

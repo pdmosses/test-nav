@@ -3,6 +3,9 @@ layout: default
 title: Mathjax examples
 parent: Mathjax
 mathjax: true
+tags: 
+  - latex
+  - math
 ---
 
 $$x$$ math at the start of the document
@@ -112,6 +115,10 @@ $$
 
 where $$\sca{\cdot,\cdot}$$ denotes the inner product $$\sca{\scalong{x}, \scalong{x}} = \sum_{i=1}^k x_i y_i$$.
 
+<!-- newcommand in environment-->
+$$\newcommand{\scalong}[1]{(#1_1,\dots,#1_k)}$$where $$\sca{\cdot,\cdot}$$ denotes the inner product $$\sca{\scalong{x}, \scalong{x}} = \sum_{i=1}^k x_i y_i$$.
+
+
 ----
 
 **Testing several math fonts**
@@ -181,6 +188,8 @@ _math $$x^2$$ in emphasis_
 **math $$x^2$$ in bold**
 
 [math $$x^2$$ in link](http://www.mathjax.org/)
+
+$$ \href{http://www.mathjax.org/}{\mathsf{link}} $$ in math
 
 `math $$x^2$$ in code`
 
