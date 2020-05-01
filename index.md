@@ -41,6 +41,7 @@ See [Test Tags](/docs/test-tags/) for some simple tests.
 To add tags to a _Just the Docs_ website, copy the files `_layouts/tags.html`
 and `_includes/nav_tags.html` to it, and include the latter file in
 `_layouts/default.html`.
+Copy also the file `docs/tags.md`.
 
 > _Caveat:_ The usability of this implementation of tags has not yet been tested
 > on a larger site with real-world tags.
