@@ -53,11 +53,16 @@ Suggestions for improvements are welcome!
 Test of Mathjax
 ---------------
 
-Using `_config.yml` with:
+See the [Test Mathjax]({{ site.url }}{{ site.baseurl }}/docs/Mathjax) page.
+
+To use Mathjax, update `_config.yml` to ensure:
 ```
 compress_html:
   blanklines: true
 ```
+and copy the contents of `_includes/head_custom.html`.
+The Mathjax code is loaded only on pages that set `mathjax: true`.
+
 
 $$
 \begin{align*}
