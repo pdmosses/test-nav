@@ -14,7 +14,8 @@ Just the Docs
 This site is currently based on version 0.2.7 of Just the Docs,
 with additions to `_includes` for recursive navigation and default page order.
 
-Navigation involving grandchildren is illustrated in [UI Components](/docs/ui-components).
+Navigation involving grandchildren is illustrated in 
+[UI Components]({{ site.url }}{{ site.baseurl }}/docs/ui-components).
 
 
 Test of tags
@@ -36,7 +37,7 @@ but internally they are converted to a
 Each tag is linked to a section of a page that lists all the tags and,
 for each tag, lists all the pages that are tagged with it.
 
-See [Test Tags](/docs/test-tags/) for some simple tests.
+See [Test Tags]({{ site.url }}{{ site.baseurl }}/docs/test-tags/) for some simple tests.
 
 To add tags to a _Just the Docs_ website, copy the files `_layouts/tags.html`
 and `_includes/nav_tags.html` to it, and include the latter file in
