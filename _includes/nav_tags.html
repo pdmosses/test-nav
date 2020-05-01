@@ -3,7 +3,7 @@
   <ul class="navigation-list{{ include.class }}">
   {%- for tag in page.tags -%}
     <li class="navigation-list-item">
-    <a href="{{ site.url }}{{ site.baseurl }}/docs/Tags/#{{ tag | slugify }}" class="navigation-list-link">#{{ tag }}</a></li>
+    <a href="{{ site.url }}{{ site.baseurl }}/docs/tags/#{{ tag | slugify }}" class="navigation-list-link">#{{ tag }}</a></li>
   {%- endfor -%}
   </ul>
 {%- endif -%}
