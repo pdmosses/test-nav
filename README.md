@@ -6,7 +6,8 @@ Test of generated navigation
 Just the Docs
 -------------
 
-This site is currently based on version 0.2.7 of Just the Docs,
+This site is currently based on version 0.2.7 of 
+[Just the Docs](https://pmarsceill.github.io/just-the-docs/),
 with additions to `_includes` for recursive navigation and default page order.
 
 Navigation involving grandchildren is illustrated in 
