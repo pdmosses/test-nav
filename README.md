@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+---
 
-You can use the [editor on GitHub](https://github.com/pdmosses/test-nav/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Test of generated navigation
+============================
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Just the Docs
+-------------
 
-### Markdown
+This site is currently based on version 0.2.7 of Just the Docs,
+with additions to `_includes` for recursive navigation and default page order.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Navigation involving grandchildren is illustrated in 
+[UI Components](https://pdmosses.github.io/test-nav/docs/ui-components).
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Test of tags
+------------
 
-- Bulleted
-- List
+All pages display their tags in the navigation bar.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Tags are specified in the front matter of a page as an array:
 ```
+tags:
+  - ...
+  - ...
+```
+Tags may include spaces and non-alphanumeric characters,
+but internally they are converted to a 
+["pretty"](https://jekyllrb.com/docs/liquid/filters/#options-for-the-slugify-filter)
+ canonical form.
+ 
+Each tag is linked to a section of a page that lists all the tags and,
+for each tag, lists all the pages that are tagged with it.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+See [Test Tags](https://pdmosses.github.io/test-nav/docs/test-tags/) for some simple tests.
 
-### Jekyll Themes
+To add tags to a _Just the Docs_ website, copy the files `_layouts/tags.html`
+and `_includes/nav_tags.html` to it, and include the latter file in
+`_layouts/default.html`.
+Copy also the file `docs/tags.md`.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pdmosses/test-nav/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+> _Caveat:_ The usability of this implementation of tags has not yet been tested
+> on a larger site with real-world tags.
 
-### Support or Contact
+Suggestions for improvements are welcome! 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+Test of Mathjax
+---------------
+
+See the [Test Mathjax](https://pdmosses.github.io/test-nav/docs/Mathjax) page.
+
+To use Mathjax, update `_config.yml` to ensure:
+```
+compress_html:
+  blanklines: true
+```
+and copy the contents of `_includes/head_custom.html`.
+The Mathjax code is loaded only on pages that set `mathjax: true`.
