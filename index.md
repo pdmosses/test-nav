@@ -47,8 +47,11 @@ Copy also the file `docs/tags.md`.
 > _Caveat:_ The usability of this implementation of tags has not yet been tested
 > on a larger site with real-world tags.
 
-Suggestions for improvements are welcome! 
-
+**UPDATE (May 2020): The support for tag indexes provided here has now been extended
+with semi-automatic *creation of separate pages for individual tags*, and tested
+on a larger site with real-world tags. It is essentially theme-independent;
+see <https://pdmosses.github.io/tags/> for an example of its use with the basic
+Minima theme, along with a brief user guide.**
 
 Test of Mathjax
 ---------------
